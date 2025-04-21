@@ -87,11 +87,12 @@ The example below demonstrates the expected output format of this command:
 ![camera_info](https://github.com/EhtishamAshraf/Robotic_Arm_Vision_Pick_Place/blob/2e53db006fcf785844715a155fc84e6350c14991/ur5_control/Images/camera_info.png)
 
 🛠️🚧 **Obstacles in MoveIt:**
+
 In the current setup, the table and bins are added as obstacles within the MoveIt environment to ensure that the arm's motion planning avoids accidental collisions. By incorporating these obstacles into the planning scene, the robot can intelligently navigate its workspace and plan its movements while accounting for surrounding objects, preventing potential collisions and ensuring smooth and safe operation.
 
 This setup enhances the accuracy and reliability of the arm's path planning, making it more efficient for real-world tasks.
 
-![detected cubes](https://github.com/EhtishamAshraf/Robotic_Arm_Vision_Pick_Place/blob/2e53db006fcf785844715a155fc84e6350c14991/ur5_control/Images/rviz.png)
+![obstacles](https://github.com/EhtishamAshraf/Robotic_Arm_Vision_Pick_Place/blob/2e53db006fcf785844715a155fc84e6350c14991/ur5_control/Images/rviz.png)
 
 
 🤖🪝 **Handling Object Gripping in Gazebo:**
@@ -101,6 +102,7 @@ In the Gazebo simulation, the cubes are affected by gravity. To prevent the obje
 Additionally, stiffness coefficients and friction parameters have been applied to the cubes. These adjustments help improve the gripper's ability to securely grip the cubes, simulating a more realistic interaction between the gripper and the objects.
 
 👉 Please note that these modifications are specific to the simulation environment and do not affect real-world scenarios.
+![gravity](https://github.com/EhtishamAshraf/Robotic_Arm_Vision_Pick_Place/blob/4f3c750599c3f8f561fbaf701deca7453adb74b2/ur5_control/Images/gravity_setting.png)
 
 ## ⚙️ Execution: Follow the steps to launch and run the repository. 🚀
 ⚠️ Note: The Gazebo simulation is intentionally launched in a paused state to allow all components and controllers to initialize properly before starting.
