@@ -120,7 +120,7 @@ def transform_pixel_to_world(pixel_x, pixel_y):
         depth = 1.5 - 0.775  # Depth = Camera height - Table height (since object is at z=0.775 in world frame)
 
         X = depth                         # Depth now aligns with camera's Z-axis
-        Y = -(pixel_x - cx) * depth / fx  # X in image corresponds to -Y in cam (moving horizontally in image, refers to moving in Y-axis in real world coordinates w.r.t to camera, more info: on gitHub)
+        Y = -(pixel_x - cx) * depth / fx  # X in image corresponds to -Y in cam (moving horizontally in image, refers to moving in -Y-axis in real world coordinates w.r.t to camera, more info: on gitHub)
         Z = -(pixel_y - cy) * depth / fy  # Y in image corresponds to -Z in cam
 
         print("World coordinates: X_cam =", X, "Y_cam =", Y, "Z_cam =", Z)
