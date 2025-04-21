@@ -61,9 +61,11 @@ Z = -((pixel_y - cy) * depth) / fy
 > - However, **with the current setup**, the **camera's Y-axis** aligns with the image's **horizontal X-direction**, and the **camera's Z-axis** aligns with the image's **vertical downward Y-direction**.
 > - Consequently, the Y and Z coordinates are negative relative to the image axes.  
 
+The below image shows the frame of the camera:
 ![camera frame](https://github.com/EhtishamAshraf/Robotic_Arm_Vision_Pick_Place/blob/2e53db006fcf785844715a155fc84e6350c14991/ur5_control/Images/camera_frame.png)
 
 The camera captures the scene and the detection algorithm identifies individual cubes within the field of view. For each detected cube, the algorithm computes the centroid, draws a bounding box around it, and displays the identified color label. This provides both visual feedback and critical information for further processing steps such as coordinate transformation and pick-and-place operations.
+
 ![detected cubes](https://github.com/EhtishamAshraf/Robotic_Arm_Vision_Pick_Place/blob/2e53db006fcf785844715a155fc84e6350c14991/ur5_control/Images/detected_cubes.png)
 
 👉 [`Color based detection`](https://github.com/EhtishamAshraf/Turtlebot3_line_wall_following.git) – refer for more information on color based detection using Python. {Section: Line Following Logic}
