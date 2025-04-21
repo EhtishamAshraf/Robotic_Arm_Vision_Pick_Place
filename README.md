@@ -60,7 +60,6 @@ Z = -((pixel_y - cy) * depth) / fy
 > - Pixel values increase **vertically downward** along the Y-axis.
 > - However, **with the current setup**, the **camera's Y-axis** aligns with the image's **horizontal X-direction**, and the **camera's Z-axis** aligns with the image's **vertical downward Y-direction**.
 > - Consequently, the Y and Z coordinates are negative relative to the image axes.  
-> - If the camera were facing upward, the Y and Z coordinates would be positive.  
 
 ![camera frame](https://github.com/EhtishamAshraf/Robotic_Arm_Vision_Pick_Place/blob/2e53db006fcf785844715a155fc84e6350c14991/ur5_control/Images/camera_frame.png)
 
