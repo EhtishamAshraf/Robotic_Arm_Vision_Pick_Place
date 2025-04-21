@@ -59,7 +59,8 @@ Z = -((pixel_y - cy) * depth) / fy
 > - Pixel values increase **horizontally** (left to right) along the X-axis.
 > - Pixel values increase **vertically downward** along the Y-axis.
 > - However, **with the current setup**, the **camera's Y-axis** aligns with the image's **horizontal X-direction**, and the **camera's Z-axis** aligns with the image's **vertical downward Y-direction**.
-> - Consequently, the Y and Z coordinates are negative relative to the image axes.  
+> - Consequently, the Y and Z coordinates are negative relative to the image axes.
+> - This could be better visualized by opening the detected cubes image and the real gazebo simulation side-by-side and then comparing any two cube's position in real world with that of the detected image. {while keeping in mind that the pixel value increases from left to right and top to bottom} 
 
 The below image shows the frame of the camera in rviz:
 ![camera frame](https://github.com/EhtishamAshraf/Robotic_Arm_Vision_Pick_Place/blob/2e53db006fcf785844715a155fc84e6350c14991/ur5_control/Images/camera_frame.png)
