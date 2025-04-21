@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="red_bin">
+    <static>true</static>
+
+    <!-- Black bottom -->
+    <link name="bottom">
+      <pose>0 0 0 0 0 0</pose> <!-- Centered at origin -->
+      <visual name="visual_bottom">
+        <geometry>
+          <box>
+            <size>0.3 0.3 0.01</size> <!-- Thin black floor -->
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+        </material>
+      </visual>
+      <collision name="collision_bottom">
+        <geometry>
+          <box>
+            <size>0.3 0.3 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Four red walls -->
+    <!-- Front wall -->
+    <link name="wall_front">
+      <pose>0 0.145 0.1 0 0 0</pose> <!-- Positioned on Y+ -->
+      <visual name="visual_wall_front">
+        <geometry>
+          <box>
+            <size>0.3 0.01 0.2</size> <!-- Thin wall -->
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 0 0 1</ambient>
+          <diffuse>1 0 0 1</diffuse>
+        </material>
+      </visual>
+      <collision name="collision_wall_front">
+        <geometry>
+          <box>
+            <size>0.3 0.01 0.2</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Back wall -->
+    <link name="wall_back">
+      <pose>0 -0.145 0.1 0 0 0</pose> <!-- Positioned on Y- -->
+      <visual name="visual_wall_back">
+        <geometry>
+          <box>
+            <size>0.3 0.01 0.2</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 0 0 1</ambient>
+          <diffuse>1 0 0 1</diffuse>
+        </material>
+      </visual>
+      <collision name="collision_wall_back">
+        <geometry>
+          <box>
+            <size>0.3 0.01 0.2</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Left wall -->
+    <link name="wall_left">
+      <pose>-0.145 0 0.1 0 0 0</pose> <!-- Positioned on X- -->
+      <visual name="visual_wall_left">
+        <geometry>
+          <box>
+            <size>0.01 0.3 0.2</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 0 0 1</ambient>
+          <diffuse>1 0 0 1</diffuse>
+        </material>
+      </visual>
+      <collision name="collision_wall_left">
+        <geometry>
+          <box>
+            <size>0.01 0.3 0.2</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Right wall -->
+    <link name="wall_right">
+      <pose>0.145 0 0.1 0 0 0</pose> <!-- Positioned on X+ -->
+      <visual name="visual_wall_right">
+        <geometry>
+          <box>
+            <size>0.01 0.3 0.2</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 0 0 1</ambient>
+          <diffuse>1 0 0 1</diffuse>
+        </material>
+      </visual>
+      <collision name="collision_wall_right">
+        <geometry>
+          <box>
+            <size>0.01 0.3 0.2</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+
+  </model>
+</sdf>
