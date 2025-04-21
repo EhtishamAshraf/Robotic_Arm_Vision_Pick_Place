@@ -27,6 +27,7 @@ The object can be placed anywhere within the camera's field of view. The algorit
 ![Demo in Action](https://github.com/EhtishamAshraf/Robotic_Arm_Vision_Pick_Place/blob/2e53db006fcf785844715a155fc84e6350c14991/ur5_control/Images/Video2_Cube%20random%20Position.gif)
 
 🤖⚙️ **UR5 Robotic Arm**
+
 In robotics , **Forward Kinematics (FK)** and **Inverse Kinematics (IK)** are essential techniques used to describe and control the motion of robotic arms.
 
 In ROS, **Controllers** are used in simulation to command and control the virtual robot’s joints and movements accurately and realistically.
