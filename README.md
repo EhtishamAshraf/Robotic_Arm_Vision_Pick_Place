@@ -61,7 +61,7 @@ Z = -((pixel_y - cy) * depth) / fy
 > - However, **with the current setup**, the **camera's Y-axis** aligns with the image's **horizontal X-direction**, and the **camera's Z-axis** aligns with the image's **vertical downward Y-direction**.
 > - Consequently, the Y and Z coordinates are negative relative to the image axes.  
 
-The below image shows the frame of the camera:
+The below image shows the frame of the camera in rviz:
 ![camera frame](https://github.com/EhtishamAshraf/Robotic_Arm_Vision_Pick_Place/blob/2e53db006fcf785844715a155fc84e6350c14991/ur5_control/Images/camera_frame.png)
 
 The camera captures the scene and the detection algorithm identifies individual cubes within the field of view. For each detected cube, the algorithm computes the centroid, draws a bounding box around it, and displays the identified color label. This provides both visual feedback and critical information for further processing steps such as coordinate transformation and pick-and-place operations.
@@ -73,9 +73,9 @@ The camera captures the scene and the detection algorithm identifies individual 
 In the images below, the UR5 robotic arm is shown sequentially picking and placing red cubes. The arm processes and sorts cubes based on a color-priority order: red → green → blue. Each cube is identified by color, picked individually, and placed at the designated location.
 
 Processing first red cube:
-![camera_info](https://github.com/EhtishamAshraf/Robotic_Arm_Vision_Pick_Place/blob/2e53db006fcf785844715a155fc84e6350c14991/ur5_control/Images/camera_info.png)
+![red 1](https://github.com/EhtishamAshraf/Robotic_Arm_Vision_Pick_Place/blob/2bdcb93888f11f9191fcc4407279d0fa3aa5576b/ur5_control/Images/red_cube_1_picked.png)
 Processing second red cube:
-![camera_info](https://github.com/EhtishamAshraf/Robotic_Arm_Vision_Pick_Place/blob/2e53db006fcf785844715a155fc84e6350c14991/ur5_control/Images/camera_info.png)
+![red 2](https://github.com/EhtishamAshraf/Robotic_Arm_Vision_Pick_Place/blob/2bdcb93888f11f9191fcc4407279d0fa3aa5576b/ur5_control/Images/red_cube_2_picked.png)
 
 📷🔧 **Camera calibration parameters:**
 
