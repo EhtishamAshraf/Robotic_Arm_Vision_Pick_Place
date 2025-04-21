@@ -36,7 +36,7 @@ In ROS, **Controllers** are used in simulation to command and control the virtua
 
 📷 **Camera Role and Coordinate Transformation**
 
-The **camera** plays a critical role in this project by capturing live video feed. When objects (in current setup cubes) appear within the camera's field of view (FOV), the system:
+The **camera** plays a critical role in this project by capturing live video feed. When objects (in current setup; cubes) appear within the camera's field of view (FOV), the system:
 
 1. Captures images of the cubes.
 2. Processes the images to detect the color of each cube.
