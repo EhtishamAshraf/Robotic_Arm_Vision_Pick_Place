@@ -121,7 +121,7 @@ def pick_and_place(cube):
     pre_pick_pose = geometry_msgs.msg.Pose()
     pre_pick_pose.position.x = cube.position.x
     pre_pick_pose.position.y = cube.position.y
-    pre_pick_pose.position.z = cube.position.z + height_offset + 0.25  # Hover above
+    pre_pick_pose.position.z = cube.position.z + height_offset + 0.15  # Hover above
     pre_pick_pose.orientation.x = fixed_orientation[0]
     pre_pick_pose.orientation.y = fixed_orientation[1]
     pre_pick_pose.orientation.z = fixed_orientation[2]
