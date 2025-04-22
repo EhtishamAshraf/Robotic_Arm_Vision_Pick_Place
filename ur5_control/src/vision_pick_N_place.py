@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """
+Very important: If arm doesn't find valid motion plans from initial Home position, then take arm to the Up position from RVIZ GUI and then start this node.
 Code to sort red, green, blue cubes based on color:
 ->  Bins positions is fixed
 ->  Object's position could be anywhere within the camera's FOV.
@@ -56,6 +57,8 @@ def move_to_pose(group, target_pose):
     group.set_pose_target(target_pose, end_effector_link="tool0")   # set the target pose
     
     success, plan, _, _ = group.plan()                              # plan motion using MoveIt
+    # print(plan)
+    rospy.sleep(1.0)
     # checking if motion planning is successful:
     if success and len(plan.joint_trajectory.points) > 0:           # If a valid path is found, execute motion
         print("Valid plan found. Executing...")
@@ -66,9 +69,10 @@ def move_to_pose(group, target_pose):
         return False
     
     # stop once, execution is done:
+    rospy.sleep(1.0)
     group.stop()
     group.clear_pose_targets()
-    # rospy.sleep(1.0)
+    rospy.sleep(1.0)
     return success
 
 # Callback function for the topic /cube_positions, cube's real time positions are published on this topic
